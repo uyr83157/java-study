@@ -21,6 +21,7 @@ public class InheritanceMain {
 
 		dog.eat();
 		dog.cry();
+		System.out.println(dog.hungry);
 
 	}
 }
