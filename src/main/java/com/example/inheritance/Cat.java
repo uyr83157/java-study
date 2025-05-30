@@ -1,6 +1,7 @@
 package com.example.inheritance;
 
 public class Cat extends Animal {
+	String hungry = "꼬륵";
 
 	public Cat(String name, int age) {
 		super(name, age);
@@ -9,6 +10,7 @@ public class Cat extends Animal {
 	@Override
 	public void eat() {
 		super.eat();
+		System.out.println(hungry);
 		System.out.println(super.hungry);
 		System.out.println("생선을 먹습니다: " + name);
 	}
