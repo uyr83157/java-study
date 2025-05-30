@@ -8,6 +8,8 @@ public class Cat extends Animal {
 
 	@Override
 	public void eat() {
+		super.eat();
+		System.out.println(super.hungry);
 		System.out.println("생선을 먹습니다: " + name);
 	}
 
