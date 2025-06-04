@@ -7,7 +7,7 @@ public class Component {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                SimpleComponentExample exampleFrame = new SimpleComponentExample();
+                ComponentExample exampleFrame = new ComponentExample();
                 exampleFrame.setVisible(true);
             }
         });

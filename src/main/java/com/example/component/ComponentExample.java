@@ -5,12 +5,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SimpleComponentExample extends JFrame {
+public class ComponentExample extends JFrame {
 
     private JLabel messageLabel;
     private JButton clickButton;
 
-    public SimpleComponentExample() {
+    public ComponentExample() {
         // JFrame 설정
         setTitle("컴포넌트 테스트");
         setSize(400, 200);
