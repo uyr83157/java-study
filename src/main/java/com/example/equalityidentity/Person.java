@@ -1,4 +1,4 @@
-package com.example.EqualityIdentity;
+package com.example.equalityidentity;
 
 import lombok.Getter;
 
