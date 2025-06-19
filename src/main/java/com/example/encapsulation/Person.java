@@ -14,7 +14,6 @@ public class Person {
         this.age = 0;
     }
 
-    // Setter 유효성 검사
     public void setName(String name) {
         if (name != null && !name.trim().isEmpty()) {
             this.name = name;
@@ -22,7 +21,6 @@ public class Person {
             System.out.println("유효하지 않은 이름");
         }
     }
-
 
     public void setAge(int age) {
         if (age >= 0) {
