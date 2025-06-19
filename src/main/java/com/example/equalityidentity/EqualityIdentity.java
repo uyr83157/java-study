@@ -1,4 +1,4 @@
-package com.example.EqualityIdentity;
+package com.example.equalityidentity;
 
 public class EqualityIdentity {
     public static void main(String[] args) {
