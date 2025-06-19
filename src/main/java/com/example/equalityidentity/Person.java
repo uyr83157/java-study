@@ -1,10 +1,7 @@
 package com.example.equalityidentity;
 
-import lombok.Getter;
-
 import java.util.Objects;
 
-@Getter
 public class Person {
     private String name;
     private int age;
