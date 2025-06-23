@@ -11,8 +11,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.stream.Collectors;
 
-public class ExRateProvider {
+public class ExRateProvider implements IExRateProvider {
     @SneakyThrows
+    @Override
     public BigDecimal getExRate(String currency) {
         URL url = new URL("https://open.er-api.com/v6/latest/" + currency);
         HttpURLConnection connection = (HttpsURLConnection) url.openConnection();
@@ -21,7 +22,8 @@ public class ExRateProvider {
         bufferedReader.close();
 
         ObjectMapper objectMapper = new ObjectMapper();
-        ExRate exRate = objectMapper.readValue(response, ExRate.class);
-        return exRate.getRates().get("KRW");
+        ExRate exrate = objectMapper.readValue(response, ExRate.class);
+        BigDecimal exRate = exrate.getRates().get("KRW");
+        return exRate;
     }
 }

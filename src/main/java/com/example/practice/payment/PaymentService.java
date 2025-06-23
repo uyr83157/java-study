@@ -4,10 +4,9 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class PaymentService {
+    private final IExRateProvider exRateProvider;
 
-    private final ExRateProvider exRateProvider;
-
-    public PaymentService(ExRateProvider exRateProvider) {
+    public PaymentService(IExRateProvider exRateProvider) {
         this.exRateProvider = exRateProvider;
     }
 
